@@ -1,4 +1,4 @@
-package com.example.RekrutacjaAPIFull;
+package com.example.RekrutacjaAPIFull.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

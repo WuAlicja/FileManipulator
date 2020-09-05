@@ -1,4 +1,4 @@
-package com.example.RekrutacjaAPIFull;
+package com.example.RekrutacjaAPIFull.fileModels;
 
 
 import java.io.IOException;
@@ -8,6 +8,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
+import com.example.RekrutacjaAPIFull.exceptions.FileNotFoundException;
+import com.example.RekrutacjaAPIFull.exceptions.FileStorageException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;

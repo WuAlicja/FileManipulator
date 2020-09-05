@@ -1,4 +1,4 @@
-package com.example.RekrutacjaAPIFull;
+package com.example.RekrutacjaAPIFull.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

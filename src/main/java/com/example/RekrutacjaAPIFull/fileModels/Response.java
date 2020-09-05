@@ -1,4 +1,4 @@
-package com.example.RekrutacjaAPIFull;
+package com.example.RekrutacjaAPIFull.fileModels;
 
 import lombok.Getter;
 import lombok.Setter;

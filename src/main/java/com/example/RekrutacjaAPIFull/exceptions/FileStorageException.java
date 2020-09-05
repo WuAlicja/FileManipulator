@@ -1,4 +1,4 @@
-package com.example.RekrutacjaAPIFull;
+package com.example.RekrutacjaAPIFull.exceptions;
 
 
 public class FileStorageException extends RuntimeException {

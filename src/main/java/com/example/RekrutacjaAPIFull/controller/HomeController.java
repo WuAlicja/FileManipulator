@@ -1,5 +1,9 @@
-package com.example.RekrutacjaAPIFull;
+package com.example.RekrutacjaAPIFull.controller;
 
+import com.example.RekrutacjaAPIFull.fileModels.FileStorageService;
+import com.example.RekrutacjaAPIFull.models.ReadAndCount;
+import com.example.RekrutacjaAPIFull.models.ReplaceEverySecond;
+import com.example.RekrutacjaAPIFull.fileModels.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
