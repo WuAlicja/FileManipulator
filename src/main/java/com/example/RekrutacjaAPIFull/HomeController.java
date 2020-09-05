@@ -50,15 +50,19 @@ public class HomeController {
     }
 
     @PostMapping("readandcount")
-    public Map<String,Integer> readAndCount(@RequestParam String pathName) {
+    //@RequestParam String pathName
+    public Map<String,Integer> readAndCount(@RequestParam("file") MultipartFile file) {
 
-        return readAndCount.getStringCount(readAndCount.getStringFile(pathName));
+        String fileName = fileStorageService.storeFile(file);
+        return readAndCount.getStringCount
+                (readAndCount.getStringFile("/Users/alicja/Downloads/JavaSzkolenie/Samouczek/RekrutacjaAPIFull/uploads/"+fileName));
     }
 
     @PostMapping("replaceeverysecond")
-    public List<String> replaceEverySecond(@RequestParam String pathName) {
-
-        return replaceEverySecond.replace(replaceEverySecond.getStringFile(pathName));
+    public List<String> replaceEverySecond(@RequestParam("file") MultipartFile file) {
+        String fileName = fileStorageService.storeFile(file);
+        return replaceEverySecond.replace(replaceEverySecond.
+                getStringFile("/Users/alicja/Downloads/JavaSzkolenie/Samouczek/RekrutacjaAPIFull/uploads/"+fileName));
 
     }
 
